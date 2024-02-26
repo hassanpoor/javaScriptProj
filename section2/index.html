@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/scriptFunctions.js"></script>
+
+</head>
+<body onload="fillDataLocation()">
+
+<form onsubmit=" loginFormValidate(event)
+">
+    <div>
+        <p id="result"></p> <br/>
+        <input name="username" placeholder="userName" onchange="validateUsername(event)"/>
+        <br/>
+        <input name="password" placeholder="Password" onchange="validatePassword(event)" type="password"/>
+        <br>
+        <input name="birthday" placeholder="Birthday" onchange="validateDate(event)" type="Date"/>
+        <button type="submit">submit</button>
+        <button type="button" onclick="gotoGoogle()">go to google</button>
+    </div>
+
+</form>
+<div id="informationDiv"></div>
+</body>
+</html>
