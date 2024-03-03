@@ -94,8 +94,18 @@ var mathUtil = function (x) {
 //
 //     }
 
+let timeout;
+
+function myFunction() {
+     setTimeout(alertFunc, 10000);
+}
+
+function alertFunc() {
+    alert("Hello!");
+}
 var gotoGoogle = function () {
-    location.href="https://www.google.com"
+    myFunction()
+    location.href = "https://www.google.com"
 }
 
 
